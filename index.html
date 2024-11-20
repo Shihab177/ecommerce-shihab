@@ -1,79 +1,467 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <!--Header-->
-    <header class="bg-black/5">
-      <!--header top-->
-      <div class="pt-7 pb-6 max-w-[1326px] m-auto flex justify-between border-b border-[#E3E3E3]">
-        <div class="w-full">
-          <img src="icon/search.png" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" 
+</head>
+
+<body>
+  <!--Header-->
+  <header class="bg-black/5">
+    <!--header top-->
+    <div class="pt-7 pb-6 max-w-[1326px] m-auto flex justify-between border-b border-[#E3E3E3]">
+      <div class="w-full">
+        <img src="icon/search.png" alt="" />
+      </div>
+      <div class="w-full justify-center">
+        <img src="icon/main-logo.png" alt="" class="mx-auto" />
+      </div>
+      <div class="w-full flex items-center justify-end gap-5 ">
+        <!--item1-->
+        <div class="flex gap-2 ">
+          <img src="icon/account-icon.png" alt="" />
+          <p>Account</p>
         </div>
-        <div class="w-full justify-center">
-          <img src="icon/main-logo.png" alt="" class="mx-auto" />
-        </div>
-        <div class="w-full flex items-center justify-end gap-5 ">
-          <!--item1-->
-          <div class="flex gap-2 ">
-            <img src="icon/account-icon.png" alt="" />
-            <p>Account</p>
-          </div>
-          <!--item2-->
-          <div class="flex gap-2 ">
-            <img src="icon/bag.png" alt="" />
-            <p>Shoping</p>
-          </div>
+        <!--item2-->
+        <div class="flex gap-2 ">
+          <img src="icon/bag.png" alt="" />
+          <p>Shoping</p>
         </div>
       </div>
-      <!--navigation-->
-      <nav class="mt-7 max-w-[1326px] mx-auto flex flex-row items-center justify-between font-normal text-base text-black">
-        <a href="#" class="class">Jewelry & Accessories</a>
-        <a href="#" class="class">Clothing & Shoes</a>
-        <a href="#" class="class">Home & Living</a>
-        <a href="#" class="class">Wedding & Party</a>
-        <a href="#" class="class">Toys & Entertainment</a>
-        <a href="#" class="class">Art & Collectibles</a>
-        <a href="#" class="class">Craft Supplies & Tools</a>
-      </nav>
-      <!--Hero Section-->
-      <section class="w-full pt-20 pb-14 max-w-[1326px] mx-auto flex flex-row">
-        <!--left-->
-        <div class="w-7/12">
-          <h1 class="text-[74px] font-light text-black">Collections</h1>
-          <p class="mt-12 font-normal text-[30px] text-black">You Can Explore Ans Shop Many Differnt collectionFrom Various Brand Here </p>
-           <button class="bg-black flex flex-row gap-3 text-white mt-16 py-5 px-7 items-center">
-            <img src="icon/white-bag.png" alt="">
-            <span class="class">Shop Now</span>
-           </button>
+    </div>
+    <!--navigation-->
+    <nav
+      class="mt-7 max-w-[1326px] mx-auto flex flex-row items-center justify-between font-normal text-base text-black">
+      <a href="#" class="class">Jewelry & Accessories</a>
+      <a href="#" class="class">Clothing & Shoes</a>
+      <a href="#" class="class">Home & Living</a>
+      <a href="#" class="class">Wedding & Party</a>
+      <a href="#" class="class">Toys & Entertainment</a>
+      <a href="#" class="class">Art & Collectibles</a>
+      <a href="#" class="class">Craft Supplies & Tools</a>
+    </nav>
+    <!--Hero Section-->
+    <section class="w-full pt-20 pb-14 max-w-[1326px] mx-auto flex flex-row">
+      <!--left-->
+      <div class="w-7/12">
+        <h1 class="text-[74px] font-light text-black">Collections</h1>
+        <p class="mt-12 font-normal text-[30px] text-black">You Can Explore Ans Shop Many Differnt collectionFrom
+          Various Brand Here </p>
+        <button class="bg-black flex flex-row gap-3 text-white mt-16 py-5 px-7 items-center">
+          <img src="icon/white-bag.png" alt="">
+          <span class="class">Shop Now</span>
+        </button>
+      </div>
+      <!--right-->
+      <div class="w-5/12">
+        <!--IMG-->
+        <div class="border-2 border-black/25 w-max mx-auto rounded-br-[160px] rounded-tl-[160px]">
+          <img src="img/19.png" alt="" class="h-[424px] w-[400px] rounded-br-[160px] rounded-tl-[160px] 
+            -translate-x-4 -translate-y-4">
+        </div>
+      </div>
+    </section>
+  </header>
+  <!--main-->
+  <main class="class">
+    <!--company logo-->
+    <div class="my-20 max-w-[1326px] m-auto flex flex-row justify-between items-center ">
+      <img src="brand-img/brand-1.png" alt="" class="">
+      <img src="brand-img/brand-2.png" alt="" class="">
+      <img src="brand-img/03.png" alt="" class="">
+      <img src="brand-img/4.png" alt="" class="">
+      <img src="brand-img/5.png" alt="" class="">
+    </div>
+    <!--gallery-->
+    <div class="max-w-[1326px] m-auto relative">
+      <h1 class="absolute -rotate-90 top-1/2 -left-[240px] text-3xl">Explore new and popular styles</h1>
+      <!--image gallery contaner-->
+      <div class="grid grid-cols-4 gap-6"><!--item1-->
+        <div class="col-span-2 row-span-2 ">
+          <img src="img/1.png" alt="" class="">
+        </div>
+        <!--item2-->
+        <div class="">
+          <img src="img/2.png" alt="" class="">
+        </div>
+        <!--item3-->
+        <div class="">
+          <img src="img/3.png" alt="" class="">
+        </div>
+        <!--item4-->
+        <div class="">
+          <img src="img/4.png" alt="" class="">
+        </div>
+        <!--item5-->
+        <div class="">
+          <img src="img/5.png" alt="" class="">
+        </div>
+      </div>
+    </div>
+    <!--Newsletter-->
+    <div class="mt-32 max-w-[1326px] m-auto ">
+      <h1 class="text-center text-[50px] font-medium mb-8">Or subscribe to the newsletter</h1>
+      <!--product category-->
+      <div class="flex flex-row justify-between items-center">
+        <!--leftr-->
+        <div class="flex flex-row gap-10">
+          <button class="font-semibold text-black text-base">All Products</button>
+          <button class="font-semibold text-black/50  text-base">T-Shirt</button>
+          <button class="font-semibold text-black/50 text-base">Hoodies</button>
+          <button class="font-semibold text-black/50 text-base">Jacket</button>
         </div>
         <!--right-->
-        <div class="w-5/12">
-          <!--IMG-->
-          <div class="border-2 border-black/25 w-max mx-auto rounded-br-[160px] rounded-tl-[160px]">
-            <img src="img/19.png" alt="" class="h-[424px] w-[400px] rounded-br-[160px] rounded-tl-[160px] 
-            -translate-x-4 -translate-y-4">
+        <div class="class">
+          <button class="flex flex-row gap-1 items-center bg-[#1E2832] text-white font-normal text-[16px] px-4 py-1">
+            <img src="icon/filter.png" alt="">
+            <span class="">Filter</span>
+          </button>
+        </div>
+      </div>
+      <!--products Contaner-->
+      <div class="grid grid-cols-4 gap-6 mt-8">
+        <!--card1-->
+        <div class="class">
+          <div class="relative cursor-pointer group">
+          <img src="img/card-1.png" alt="" class="">
+          <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+              <img src="icon/heart.png" alt="" class="w-5">
+              <img src="icon/wsearch.png" alt="" class="w-5">
+            </div>
+            <div class="flex flex-row items-center gap-1 text-white">
+              <img src="icon/shopping-bag.png" alt="" class="w-5">
+              <p class="class">Shop Now</p>
+            </div>
           </div>
         </div>
-      </section>
-    </header>
-      <!--main-->
-      <main class="class">
-        <!--company logo-->
-        <div class="my-20 max-w-[1326px] m-auto flex flex-row justify-between items-center ">
-          <img src="brand-img/brand-1.png" alt="" class="">
-          <img src="brand-img/brand-2.png" alt="" class="">
-          <img src="brand-img/03.png" alt="" class="">
-          <img src="brand-img/4.png" alt="" class="">
-          <img src="brand-img/5.png" alt="" class="">
+          <div class="pt-[18px] px-[10px]">
+            <h3 class="text-base font-semibold text-black">Adicolor Classics Joggers</h3>
+            <div class="flex flex-row justify-between items-center mt-4">
+              <p class="text-black/50 ">Dress</p>
+              <p class="text-black font-semibold text-base">$63.85</p>
+            </div>
+          </div>
         </div>
-      </main>
-      <!--footer-->
-      <footer class="class"></footer>
-    
-  </body>
+         <!--card2-->
+         <div class="class">
+          <div class="relative cursor-pointer group">
+          <img src="img/card-2.png" alt="" class="">
+          <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+              <img src="icon/heart.png" alt="" class="w-5">
+              <img src="icon/wsearch.png" alt="" class="w-5">
+            </div>
+            <div class="flex flex-row items-center gap-1 text-white">
+              <img src="icon/shopping-bag.png" alt="" class="w-5">
+              <p class="class">Shop Now</p>
+            </div>
+          </div>
+        </div>
+          <div class="pt-[18px] px-[10px]">
+            <h3 class="text-base font-semibold text-black">Nike Sportswear Futura Luxe</h3>
+            <div class="flex flex-row justify-between items-center mt-4">
+              <p class="text-black/50 ">Bag</p>
+              <p class="text-black font-semibold text-base">$130.00</p>
+            </div>
+          </div>
+        </div>
+        <!--card3-->
+        <div class="class">
+          <div class="relative cursor-pointer group">
+          <img src="img/card-3.png" alt="" class="">
+          <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+              <img src="icon/heart.png" alt="" class="w-5">
+              <img src="icon/wsearch.png" alt="" class="w-5">
+            </div>
+            <div class="flex flex-row items-center gap-1 text-white">
+              <img src="icon/shopping-bag.png" alt="" class="w-5">
+              <p class="class">Shop Now</p>
+            </div>
+          </div>
+        </div>
+          <div class="pt-[18px] px-[10px]">
+            <h3 class="text-base font-semibold text-black">Geometric print Scarf</h3>
+            <div class="flex flex-row justify-between items-center mt-4">
+              <p class="text-black/50 ">Scaft</p>
+              <p class="text-black font-semibold text-base">$53.00</p>
+            </div>
+          </div>
+        </div>
+        <!--card4-->
+        <div class="class">
+          <div class="relative cursor-pointer group">
+          <img src="img/card-4.png" alt="" class="">
+          <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+              <img src="icon/heart.png" alt="" class="w-5">
+              <img src="icon/wsearch.png" alt="" class="w-5">
+            </div>
+            <div class="flex flex-row items-center gap-1 text-white">
+              <img src="icon/shopping-bag.png" alt="" class="w-5">
+              <p class="class">Shop Now</p>
+            </div>
+          </div>
+        </div>
+          <div class="pt-[18px] px-[10px]">
+            <h3 class="text-base font-semibold text-black">Yellow Reserved Hoodie</h3>
+            <div class="flex flex-row justify-between items-center mt-4">
+              <p class="text-black/50 ">Dress</p>
+              <p class="text-black font-semibold text-base">$155.00</p>
+            </div>
+          </div>
+        </div>
+        <!--card5-->
+        <div class="class">
+          <div class="relative cursor-pointer group">
+          <img src="img/card-5.png" alt="" class="">
+          <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+              <img src="icon/heart.png" alt="" class="w-5">
+              <img src="icon/wsearch.png" alt="" class="w-5">
+            </div>
+            <div class="flex flex-row items-center gap-1 text-white">
+              <img src="icon/shopping-bag.png" alt="" class="w-5">
+              <p class="class">Shop Now</p>
+            </div>
+          </div>
+        </div>
+          <div class="pt-[18px] px-[10px]">
+            <h3 class="text-base font-semibold text-black">Basic Dress Green</h3>
+            <div class="flex flex-row justify-between items-center mt-4">
+              <p class="text-black/50 ">Dress</p>
+              <p class="text-black font-semibold text-base">$236.00</p>
+            </div>
+          </div>
+        </div>
+        <!--card6-->
+        <div class="class">
+          <div class="relative cursor-pointer group">
+          <img src="img/card-6.png" alt="" class="">
+          <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+              <img src="icon/heart.png" alt="" class="w-5">
+              <img src="icon/wsearch.png" alt="" class="w-5">
+            </div>
+            <div class="flex flex-row items-center gap-1 text-white">
+              <img src="icon/shopping-bag.png" alt="" class="w-5">
+              <p class="class">Shop Now</p>
+            </div>
+          </div>
+        </div>
+          <div class="pt-[18px] px-[10px]">
+            <h3 class="text-base font-semibold text-black">Nike Air Zoom Pegasus</h3>
+            <div class="flex flex-row justify-between items-center mt-4">
+              <p class="text-black/50 ">Shoe</p>
+              <p class="text-black font-semibold text-base">$198.00</p>
+            </div>
+          </div>
+        </div>
+        <!--card7-->
+        <div class="class">
+          <div class="relative cursor-pointer group">
+          <img src="img/card-7.png" alt="" class="">
+          <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+              <img src="icon/heart.png" alt="" class="w-5">
+              <img src="icon/wsearch.png" alt="" class="w-5">
+            </div>
+            <div class="flex flex-row items-center gap-1 text-white">
+              <img src="icon/shopping-bag.png" alt="" class="w-5">
+              <p class="class">Shop Now</p>
+            </div>
+          </div>
+        </div>
+          <div class="pt-[18px] px-[10px]">
+            <h3 class="text-base font-semibold text-black">Nike Repel Miler</h3>
+            <div class="flex flex-row justify-between items-center mt-4">
+              <p class="text-black/50 ">Dress</p>
+              <p class="text-black font-semibold text-base">$120.00</p>
+            </div>
+          </div>
+        </div>
+        <!--card8-->
+        <div class="class">
+          <div class="relative cursor-pointer group">
+          <img src="img/card-8.png" alt="" class="">
+          <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-4">
+              <img src="icon/heart.png" alt="" class="w-5">
+              <img src="icon/wsearch.png" alt="" class="w-5">
+            </div>
+            <div class="flex flex-row items-center gap-1 text-white">
+              <img src="icon/shopping-bag.png" alt="" class="w-5">
+              <p class="class">Shop Now</p>
+            </div>
+          </div>
+        </div>
+          <div class="pt-[18px] px-[10px]">
+            <h3 class="text-base font-semibold text-black">Nike Sportswear Futura Luxe</h3>
+            <div class="flex flex-row justify-between items-center mt-4">
+              <p class="text-black/50 ">Glasses</p>
+              <p class="text-black font-semibold text-base">$160.00</p>
+            </div>
+          </div>
+        </div>
+         
+      </div>
+    </div>
+    <!--Banner-->
+    <div class="class"></div>
+    <!-- best seller-->
+    <div class="class">
+      <div class="mt-32 max-w-[1326px] m-auto mb-24 ">
+        <h1 class="text-center text-[50px] font-medium mb-8">Best Sellers</h1>
+        <!--product category-->
+        <div class="flex flex-row justify-between items-center">
+          <!--leftr-->
+          <div class="flex flex-row gap-10">
+            <button class="font-semibold text-black text-base">All Products</button>
+            <button class="font-semibold text-black/50  text-base">T-Shirt</button>
+            <button class="font-semibold text-black/50 text-base">Hoodies</button>
+            <button class="font-semibold text-black/50 text-base">Jacket</button>
+          </div>
+          <!--right-->
+          <div class="class">
+            <button class="flex flex-row gap-1 items-center bg-[#1E2832] text-white font-normal text-[16px] px-4 py-1">
+              
+              <span class="">Show All</span>
+            </button>
+          </div>
+        </div>
+        <!--products Contaner-->
+        <div class=" gap-6 mt-8 best-seller-slider">
+          <!--card1-->
+          <div class="class">
+            <div class="relative cursor-pointer group">
+            <img src="img/card-5.png" alt="" class="">
+            <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+              <div class="flex flex-row items-center gap-4">
+                <img src="icon/heart.png" alt="" class="w-5">
+                <img src="icon/wsearch.png" alt="" class="w-5">
+              </div>
+              <div class="flex flex-row items-center gap-1 text-white">
+                <img src="icon/shopping-bag.png" alt="" class="w-5">
+                <p class="class">Shop Now</p>
+              </div>
+            </div>
+          </div>
+            <div class="pt-[18px] px-[10px]">
+              <h3 class="text-base font-semibold text-black">Basic Dress Green</h3>
+              <div class="flex flex-row justify-between items-center mt-4">
+                <p class="text-black/50 ">Dress</p>
+                <p class="text-black font-semibold text-base">$236.00</p>
+              </div>
+            </div>
+          </div>
+           <!--card2-->
+           <div class="class">
+            <div class="relative cursor-pointer group">
+            <img src="img/card-2.png" alt="" class="">
+            <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+              <div class="flex flex-row items-center gap-4">
+                <img src="icon/heart.png" alt="" class="w-5">
+                <img src="icon/wsearch.png" alt="" class="w-5">
+              </div>
+              <div class="flex flex-row items-center gap-1 text-white">
+                <img src="icon/shopping-bag.png" alt="" class="w-5">
+                <p class="class">Shop Now</p>
+              </div>
+            </div>
+          </div>
+            <div class="pt-[18px] px-[10px]">
+              <h3 class="text-base font-semibold text-black">Nike Sportswear Futura Luxe</h3>
+              <div class="flex flex-row justify-between items-center mt-4">
+                <p class="text-black/50 ">Bag</p>
+                <p class="text-black font-semibold text-base">$130.00</p>
+              </div>
+            </div>
+          </div>
+          <!--card3-->
+          <div class="class">
+            <div class="relative cursor-pointer group">
+            <img src="img/card-4.png" alt="" class="">
+            <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+              <div class="flex flex-row items-center gap-4">
+                <img src="icon/heart.png" alt="" class="w-5">
+                <img src="icon/wsearch.png" alt="" class="w-5">
+              </div>
+              <div class="flex flex-row items-center gap-1 text-white">
+                <img src="icon/shopping-bag.png" alt="" class="w-5">
+                <p class="class">Shop Now</p>
+              </div>
+            </div>
+          </div>
+            <div class="pt-[18px] px-[10px]">
+              <h3 class="text-base font-semibold text-black">Yellow Reserved Hoodie</h3>
+              <div class="flex flex-row justify-between items-center mt-4">
+                <p class="text-black/50 ">Dress</p>
+                <p class="text-black font-semibold text-base">$155.00</p>
+              </div>
+            </div>
+          </div>
+          <!--card4-->
+          <div class="class">
+            <div class="relative cursor-pointer group">
+            <img src="img/card-6.png" alt="" class="">
+            <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+              <div class="flex flex-row items-center gap-4">
+                <img src="icon/heart.png" alt="" class="w-5">
+                <img src="icon/wsearch.png" alt="" class="w-5">
+              </div>
+              <div class="flex flex-row items-center gap-1 text-white">
+                <img src="icon/shopping-bag.png" alt="" class="w-5">
+                <p class="class">Shop Now</p>
+              </div>
+            </div>
+          </div>
+            <div class="pt-[18px] px-[10px]">
+              <h3 class="text-base font-semibold text-black">Nike Air Zoom Pegasus</h3>
+              <div class="flex flex-row justify-between items-center mt-4">
+                <p class="text-black/50 ">Shoe</p>
+                <p class="text-black font-semibold text-base">$220.00</p>
+              </div>
+            </div>
+          </div>
+          <!--card5-->
+          <div class="class">
+            <div class="relative cursor-pointer group">
+            <img src="img/card-1.png" alt="" class="">
+            <div class="bg-[#1E2832] hidden group-hover:flex absolute bottom-0 w-full p-3 flex-row justify-between items-center">
+              <div class="flex flex-row items-center gap-4">
+                <img src="icon/heart.png" alt="" class="w-5">
+                <img src="icon/wsearch.png" alt="" class="w-5">
+              </div>
+              <div class="flex flex-row items-center gap-1 text-white">
+                <img src="icon/shopping-bag.png" alt="" class="w-5">
+                <p class="class">Shop Now</p>
+              </div>
+            </div>
+          </div>
+            <div class="pt-[18px] px-[10px]">
+              <h3 class="text-base font-semibold text-black">Adicolor Classics Joggers</h3>
+              <div class="flex flex-row justify-between items-center mt-4">
+                <p class="text-black/50 ">Dress</p>
+                <p class="text-black font-semibold text-base">$63.85</p>
+              </div>
+            </div>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--footer-->
+  <footer class="class"></footer>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
