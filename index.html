@@ -13,7 +13,7 @@
   <!--Header-->
   <header class="bg-black/5">
     <!--header top-->
-    <div class="pt-7 pb-6 max-w-[1326px] m-auto flex justify-between border-b border-[#E3E3E3]">
+    <div class="pt-7 sm:px-4 pb-6 max-w-[1326px] m-auto flex justify-between border-b border-[#E3E3E3]">
       <div class="w-full">
         <img src="icon/search.png" alt="" />
       </div>
@@ -22,8 +22,8 @@
       </div>
       <div class="w-full flex items-center justify-end gap-5 ">
         <!--item1-->
-        <div class="flex gap-2 ">
-          <img src="icon/account-icon.png" alt="" />
+        <div class="flex gap-2">
+          <img class="" src="icon/account-icon.png" alt="" />
           <p>Account</p>
         </div>
         <!--item2-->
@@ -34,16 +34,23 @@
       </div>
     </div>
     <!--navigation-->
+    <!--destop-->
     <nav
-      class="mt-7 max-w-[1326px] mx-auto flex flex-row items-center justify-between font-normal text-base text-black">
-      <a href="#" class="class">Jewelry & Accessories</a>
-      <a href="#" class="class">Clothing & Shoes</a>
-      <a href="#" class="class">Home & Living</a>
-      <a href="#" class="class">Wedding & Party</a>
-      <a href="#" class="class">Toys & Entertainment</a>
-      <a href="#" class="class">Art & Collectibles</a>
-      <a href="#" class="class">Craft Supplies & Tools</a>
+      class=" md:block sm:hidden mt-7 max-w-[1326px]  mx-auto flex flex-row items-center justify-between font-normal text-base text-black">
+      <div class="group"><a href="#" class="group-hover:text-[#FF6F61] transition-[5ms]">Jewelry & Accessories</a></div>
+      <div class="group"><a href="#" class="group-hover:text-[#FF6F61] transition-[5ms]">Clothing & Shoes</a></div>
+      <div class="group"><a href="#" class="group-hover:text-[#FF6F61] transition-[5ms]">Home & Living</a></div>
+      <div class="group"><a href="#" class="group-hover:text-[#FF6F61] transition-[5ms]">Wedding & Party</a></div>
+      <div class="group"><a href="#" class="group-hover:text-[#FF6F61] transition-[5ms] ">Toys & Entertainment</a></div>
+      <div class="group"><a href="#" class="group-hover:text-[#FF6F61] transition-[5ms] ">Art & Collectibles</a></div>
+      <div class="group"><a href="#" class="group-hover:text-[#FF6F61] transition-[5ms] ">Craft Supplies & Tools</a></div>
+      
     </nav>
+    <!--mobile-->
+    <nav class="sm:block">
+      <div class=" cursor-pointer px-3 flex flex-row justify-end"><img src="icon/menu.svg" alt="" class="w-12 h-12"></div>
+    </nav>
+
     <!--Hero Section-->
     <section class="w-full pt-20 pb-14 max-w-[1326px] mx-auto flex flex-row">
       <!--left-->
@@ -51,9 +58,9 @@
         <h1 class="text-[74px] font-light text-black">Collections</h1>
         <p class="mt-12 font-normal text-[30px] text-black">You Can Explore Ans Shop Many Differnt collectionFrom
           Various Brand Here </p>
-        <button class="bg-black flex flex-row gap-3 text-white mt-16 py-5 px-7 items-center">
+        <button class="bg-black flex hover:bg-[#FF6F61] flex-row gap-3 text-white mt-16 py-5 px-7 items-center">
           <img src="icon/white-bag.png" alt="">
-          <span class="class">Shop Now</span>
+          <span class="text-[29px] text-white">Shop Now</span>
         </button>
       </div>
       <!--right-->
@@ -67,7 +74,7 @@
     </section>
   </header>
   <!--main-->
-  <main class="class">
+  <main class="mb-[140px]">
     <!--company logo-->
     <div class="my-20 max-w-[1326px] m-auto flex flex-row justify-between items-center ">
       <img src="brand-img/brand-1.png" alt="" class="">
@@ -81,24 +88,64 @@
       <h1 class="absolute -rotate-90 top-1/2 -left-[240px] text-3xl">Explore new and popular styles</h1>
       <!--image gallery contaner-->
       <div class="grid grid-cols-4 gap-6"><!--item1-->
-        <div class="col-span-2 row-span-2 ">
+        <div class="col-span-2 row-span-2 relative group">
           <img src="img/1.png" alt="" class="">
+          <div class="bg-black hidden group-hover:flex py-5 px-3 absolute w-full bottom-0 flex-row items-center justify-between">
+           <div class="class">
+            <p class="text-white">Manto</p>
+           </div>
+           <div class="">
+            <p class="text-white">86 Product</p>
+           </div>
+          </div>
         </div>
         <!--item2-->
-        <div class="">
+        <div class="relative group">
           <img src="img/2.png" alt="" class="">
+          <div class="bg-black hidden group-hover:flex py-3 px-3 absolute w-full bottom-0 flex-row items-center justify-between">
+            <div class="class">
+             <p class="text-white">Pants</p>
+            </div>
+            <div class="">
+             <p class="text-white">200 Product</p>
+            </div>
+           </div>
         </div>
         <!--item3-->
-        <div class="">
+        <div class="relative group">
           <img src="img/3.png" alt="" class="">
+          <div class="bg-black hidden group-hover:flex py-3 px-3 absolute w-full bottom-0 flex-row items-center justify-between">
+            <div class="class">
+             <p class="text-white">Pants</p>
+            </div>
+            <div class="">
+             <p class="text-white">200 Product</p>
+            </div>
+           </div>
         </div>
         <!--item4-->
-        <div class="">
+        <div class="relative group">
           <img src="img/4.png" alt="" class="">
+          <div class="bg-black hidden group-hover:flex py-3 px-3 absolute w-full bottom-0 flex-row items-center justify-between">
+            <div class="class">
+             <p class="text-white">Pants</p>
+            </div>
+            <div class="">
+             <p class="text-white">200 Product</p>
+            </div>
+           </div>
         </div>
         <!--item5-->
-        <div class="">
+        <div class="relative group">
           <img src="img/5.png" alt="" class="">
+          <div class="bg-black hidden group-hover:flex py-3 px-3 absolute w-full bottom-0 flex-row items-center justify-between">
+            <div class="class">
+             <p class="text-white">Pants</p>
+            </div>
+            <div class="">
+             <p class="text-white">200 Product</p>
+            </div>
+           </div>
         </div>
       </div>
     </div>
@@ -110,13 +157,13 @@
         <!--leftr-->
         <div class="flex flex-row gap-10">
           <button class="font-semibold text-black text-base">All Products</button>
-          <button class="font-semibold text-black/50  text-base">T-Shirt</button>
-          <button class="font-semibold text-black/50 text-base">Hoodies</button>
-          <button class="font-semibold text-black/50 text-base">Jacket</button>
+          <button class="font-semibold text-black/50  text-base hover:text-[#FF6F61]">T-Shirt</button>
+          <button class="font-semibold text-black/50 text-base hover:text-[#FF6F61]">Hoodies</button>
+          <button class="font-semibold text-black/50 text-base hover:text-[#FF6F61]">Jacket</button>
         </div>
         <!--right-->
         <div class="class">
-          <button class="flex flex-row gap-1 items-center bg-[#1E2832] text-white font-normal text-[16px] px-4 py-1">
+          <button class="flex flex-row gap-1 hover:bg-[#FF6F61] items-center bg-[#1E2832] text-white font-normal text-[16px] px-4 py-1">
             <img src="icon/filter.png" alt="">
             <span class="">Filter</span>
           </button>
@@ -312,7 +359,29 @@
       </div>
     </div>
     <!--Banner-->
-    <div class="class"></div>
+    <div class="mt-[140px] relative">
+     <img src="img/banner1.png" alt="" class="w-full">
+     <div class="absolute top-0 right-0 mt-12">
+      <img src="icon/zara-big.png" alt="" class="">
+     </div>
+     <div class="absolute top-56 right-[646px]">
+      <img src="icon/zara-small.png" alt="" class="class">
+     </div>
+     <!--text-->
+     <div class="absolute top-[369px] right-[333px] w-[504px] h-[187px]">
+      <p class="text-[#FFFFFF] ">
+        Lustrous yet understated. The new evening
+        wear collection exclusively offered at the
+        reopened Giorgio Armani boutique in Los
+        Angeles.
+      </p>
+     </div>
+     <div class="absolute top-[550px] right-[600px]">
+      <button class="bg-white hover:bg-[#FF6F61] px-[26px] py-[19px] ">
+        <span class="text-[29px] text-black">See Collection</span>
+      </button>
+     </div>
+    </div>
     <!-- best seller-->
     <div class="class">
       <div class="mt-32 max-w-[1326px] m-auto mb-24 ">
@@ -322,13 +391,13 @@
           <!--leftr-->
           <div class="flex flex-row gap-10">
             <button class="font-semibold text-black text-base">All Products</button>
-            <button class="font-semibold text-black/50  text-base">T-Shirt</button>
-            <button class="font-semibold text-black/50 text-base">Hoodies</button>
-            <button class="font-semibold text-black/50 text-base">Jacket</button>
+            <button class="font-semibold text-black/50 hover:text-[#FF6F61] text-base">T-Shirt</button>
+            <button class="font-semibold text-black/50 hover:text-[#FF6F61] text-base">Hoodies</button>
+            <button class="font-semibold text-black/50 hover:text-[#FF6F61] text-base">Jacket</button>
           </div>
           <!--right-->
           <div class="class">
-            <button class="flex flex-row gap-1 items-center bg-[#1E2832] text-white font-normal text-[16px] px-4 py-1">
+            <button class="flex hover:bg-[#FF6F61] flex-row gap-1 items-center bg-[#1E2832] text-white font-normal text-[16px] px-4 py-1">
               
               <span class="">Show All</span>
             </button>
@@ -455,9 +524,111 @@
         </div>
       </div>
     </div>
+    <!--Flow produucts and discount-->
+    <div class="bg-[#1E28320D] pb-[100px] ">
+     <div class="w-[1320px] h-[319px] m-auto">
+      <div class="">
+        <h2 class="text-black text-[50px] text-center">Follow products and discounts on Instagram</h2>
+      </div>
+      <div class="mt-[60px] flex flex-row justify-between">
+        <div class="class relative group">
+          <img src="img/dimg1.png" alt="" class="opacity-35">
+          <img src="icon/instagram-logo-24.png" alt="" class="absolute mt-[-25px] top-[50%] w-[70px] h-[70px] left-[50%] ml-[-25px] hidden group-hover:block">
+        </div>
+        <div class="class"><img src="img/dimg2.png" alt=""></div>
+        <div class="class"><img src="img/dimg3.png" alt=""></div>
+        <div class="class"><img src="img/dimg4.png" alt=""></div>
+        <div class="class"><img src="img/dimg5.png" alt=""></div>
+        <div class="class"><img src="img/dimg6.png" alt=""></div>
+        
+        
+      </div>
+     </div>
+     <div class="mt-[70px] w-[760px] h-[165px] m-auto relative">
+      <div class="">
+        <h2 class="text-black text-[50px] text-center">Or subscribe to the newsletter</h2>
+      </div>
+      <div class="border-b-2 border-black absolute bottom-0 w-[643px] h-[32px]">
+        <p class="text-[16px] text-[#1E283280] ml-[15px] mb-[13px]">Email Address...</p>
+      </div>
+      <div class="px-[16px] w-[91px h-[32px]] absolute right-0 bottom-0 border-b-2 border-black">
+        <button class="mb-[10px]">
+          <span class="text-black text-[16px]">SUBMIT</span>
+        </button>
+      </div>
+     </div>
+    </div>
   </main>
   <!--footer-->
-  <footer class="class"></footer>
+  <footer class="class">
+    <!--toop Footer-->
+    <div class="w-[1320px] h-[213px] m-auto flex flex-row">
+      <!--coral-->
+      <div class="w-[392px] h-[207px]">
+        <img src="icon/dcoral.png" alt="">
+        <div class="mt-[32px]">
+          <p class="leading-5 text-[#1E2832BF] text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+        </div>
+        <div class=" mt-[32px] w-[208px] h-[25px] flex flex-row justify-between items-center">
+          <img src="icon/footer-fb.png" alt="">
+          <img src="icon/footer-tw.png" alt="">
+          <img src="icon/footer-in.png" alt="">
+          <img src="icon/footer-inst.png" alt="">
+        </div>
+      </div>
+      <!--Catalog-->
+      <div class="w-[200px] h-[212px] ml-[56px]">
+        <h6 class="text-black text-[16px] font-semibold">CATALOG</h6>
+        <div class="w-[76px] h-[168px] gap-y-3 mt-[22px]">
+          <p class="text-[14px] text-[#1E2832]">Necklaces</p>
+          <p class="text-[14px] text-[#1E2832]">hoodies</p>
+          <p class="text-[14px] text-[#1E2832]">Jewelry Box</p>
+          <p class="text-[14px] text-[#1E2832]">t-shirt</p>
+          <p class="text-[14px] text-[#1E2832]">jacket</p>
+        </div>
+      </div>
+      <!--About Us-->
+      <div class="w-[200px] h-[212px] ml-[136px]">
+        <h6 class="text-black text-[16px] font-semibold">ABOUT US</h6>
+        <div class="w-[129px] h-[168px] mt-[22px] gap-y-3">
+          <p class="text-[14px] text-[#1E2832]">Our Producers</p>
+          <p class="text-[14px] text-[#1E2832]">Sitemap</p>
+          <p class="text-[14px] text-[#1E2832]">FAQ</p>
+          <p class="text-[14px] text-[#1E2832]">About Us</p>
+          <p class="text-[14px] text-[#1E2832]">Terms & Conditions</p>
+        </div>
+      </div>
+      <!--Customer Survice-->
+      <div class="w-[200px] h-[212px] ml-[137px]">
+        <h6 class="text-black text-[16px] font-semibold">CUSTOMER SERVICES</h6>
+        <div class="w-[145px] h-[168px] mt-[22px] gap-y-3">
+          <p class="text-[14px] text-[#1E2832]">Contact Us</p>
+          <p class="text-[14px] text-[#1E2832]">Track Your Order</p>
+          <p class="text-[14px] text-[#1E2832]">Product Care & Repair</p>
+          <p class="text-[14px] text-[#1E2832]">Book an Appointment</p>
+          <p class="text-[14px] text-[#1E2832]">Shipping & Returns</p>
+        </div>
+      </div>
+    </div>
+    <!--buttom Footer-->
+    <div class="w-full h-[52px] bg-[#1E2832] flex flex-row justify-evenly items-center">
+      <!--item1-->
+      <div class="w-[137] h-[22px]">
+        <p class="text-[16px] text-[#FFFFFF]">© 2022 Coral , Inc.</p>
+      </div>
+      <!--item2-->
+      <div class="w-[283px] h-[24px]">
+        <img src="icon/icons_payment 1.png" alt="">
+      </div>
+      <!--item3-->
+      <div class="w-[150px] h-[32px]">
+        <p class="text-[16px] text-[#FFFFFF]">Scroll to top
+          </p>
+      </div>
+    </div>
+  </footer>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
